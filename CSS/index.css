@@ -63,10 +63,6 @@ nav ul li a {
   transition: 0.3s;
 }
 
-nav ul li.right{
-    margin-left: auto;
-}
-
 nav ul li a:hover {
   background: #fff;
   color: #000;
@@ -82,15 +78,16 @@ nav ul li a:hover {
 }
 
 .info-description{
+  margin-top: 10px;
+  margin: 1%;
   flex: 1 1 300px;
-  padding: 1em;
+  padding: 1.5em;
   
 }
 
 .introduction{
-    width: 80%;
+    width: 85%;
     text-align: center;
-    padding: 1.5em;
     margin: 0 auto;
 }
 
@@ -113,6 +110,11 @@ nav ul li a:hover {
     font-style: italic;
     font-size: 3rem;
     margin-right: 10px;
+}
+
+.info-description p{
+  text-align: justify;
+  font-size: 1.3em;    
 
 }
 
