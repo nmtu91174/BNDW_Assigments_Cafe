@@ -88,8 +88,36 @@ nav ul li a:hover {
 }
 
 .introduction{
-    width: 100%;
+    width: 80%;
     text-align: center;
+    padding: 1.5em;
+    margin: 0 auto;
 }
+
+.introduction h2{
+    font-size: 2rem;
+    color: #552407;
+}
+
+.introduction p{
+    text-align: justify;
+    font-size: 1.3em;    
+}
+
+.h2idescrp{
+    text-transform: uppercase;
+}
+
+.spnidescrp{
+    color: #c7a17a;
+    font-style: italic;
+    font-size: 3rem;
+    margin-right: 10px;
+
+}
+
+    
+
+
 
 
