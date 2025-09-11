@@ -3,63 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Menu</title>
-
+    <title>My coffee house</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/index.css"/>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to Our Cafe</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="contactUs.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Menu điều hướng -->
+    <nav class="navmenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="right"><a href="#">Sign in</a></li>
+        </ul>
+    </nav>
+
+        <h1>My coffee house</h1>
+        <p>the best coffee in the world</p>           
+
     </header>
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-item">
-            <h3>Coffee</h3>
-            <p>Freshly brewed coffee made from premium beans.</p>
-            <span class="price">$2.50</span>
-        </div>
-        <div class="menu-item">
-            <h3>Tea</h3>
-            <p>A selection of fine teas from around the world.</p>
-            <span class="price">$2.00</span>
-        </div>
-        <div class="menu-item">
-            <h3>Pastries</h3>
-            <p>Delicious pastries baked fresh daily.</p>
-            <span class="price">$3.00</span>
-        </div>
+    <!-- Phần giới thiệu -->
+    <section class="introduction">
+        <h2>Welcome to My Coffee House</h2>
+        <p>At My Coffee House, we are passionate about delivering the finest coffee experience. Our beans are sourced from the best plantations around the world, ensuring a rich and flavorful cup every time.</p>        
     </section>
+    <!-- Phần sản phẩm nổi bật -->
+     <div class="container">
+        <div class="info-description">
+            <img src="image/indeximage/cafe3.jpg" alt="coffee" width="100%"/>
+            <h2 class="h2idescrp"><span class="spnidescrp">01</span>beautiful place</h2>
+            <p>Our coffee shop offers a cozy and inviting atmosphere, perfect for relaxing with friends or getting some work done. Enjoy free Wi-Fi and comfortable seating while sipping on your favorite brew.</p>
+            <a href="#" class="aidescrp">read more</a>            
+        </div>
+        <div class="info-description">
+            <img src="/image/indeximage/feelcoffee1.jpg" alt="feel coffee" width="100%"/>
+            <h2 class="h2idescrp"><span class="spnidescrp">02</span>feel the coffee</h2>
+            <div>
+                <p>Experience the rich aroma and bold flavors of our expertly crafted coffee. Whether you prefer a classic espresso or a creamy latte, our skilled baristas are here to create your perfect cup.</p>
+                <a href="#" class="aidescrp">read more</a>
+            </div>
+        </div>
+        <div class="info-description">
+            <img src="/image/indeximage/feelcoffee2.jpg" alt="coffee girl smile" width="100%"/>
+            <h2 class="h2idescrp"><span class="spnidescrp">03</span>great service</h2>
+            <p>At My Coffee House, we pride ourselves on providing exceptional customer service. Our friendly staff is always ready to assist you and ensure you have a memorable experience.</p>
+            <a href="#" class="aidescrp">read more</a>
+        </div>
+     </div>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a cozy cafe dedicated to serving the best coffee and pastries in town. Our mission is to create a welcoming environment where you can relax and enjoy great food and drinks.</p>
-    </section>
+        
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Our Cafe. All rights reserved.</p>
+        <p>&copy; 2024 My Coffee House. All rights reserved.</p>
     </footer>
-</body>
 </html>

@@ -67,13 +67,13 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  margin: 1em auto;
+  margin: 0 auto;
   padding: 5%;
 }
 
 .contact-info,
 .contact-form {
-  flex: 1 1 300px;   /* co giãn, min-width = 300px */
+  flex: 1 1 300px;   /* co giãn, min-width = 300px flex-grow flex-shrink flex-basis*/
   padding: 2em;
   border-radius: 0.5em;
   border: 1px solid #ccc;
@@ -177,11 +177,13 @@ nav ul li a:hover {
 /* ================= MAP ================= */
 .map {
   width: 100%;
-  margin: 1em auto;
+  margin: 0;
   padding: 2em;
 }
 
 .map h2 {
+  width: 20em;
+  margin: 0 auto;
   margin-bottom: 1em;
   text-align: center;
   color: #fff;
