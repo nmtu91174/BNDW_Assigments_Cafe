@@ -34,20 +34,32 @@ header {
   
 }
 
-.sign_in a{
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-weight: lighter;
-  padding: 0.5em 0.8em;
-  border-radius: 0.4em;
-  transition: 0.3s;
-  color: #ffffff;
+.sign_in {
+  display: inline-block;
+  padding: 0.5% 2%;
+  background: #ffffff;   /* coffee brown */
+  border-radius: 6px;
+  transition: all 0.3s ease; /* hiệu ứng mượt */
 }
 
-.sign_in a:hover{
-  background: #fff;
-  color: #000;
+.sign_in a {
+  color: #6F4E37;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+/* Khi hover vào cả khối sign_in */
+.sign_in:hover {
+  background: #6F4E37;
+  
+}
+
+.sign_in:hover a {
+  color: #ffffff; /* chữ đổi sang đen */
+}
+
 
 header h1 {
     font-size: 3.5rem;
