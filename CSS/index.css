@@ -34,6 +34,21 @@ header {
   
 }
 
+.header_top .sign_in a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: lighter;
+  padding: 0.5em 0.8em;
+  border-radius: 0.4em;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.sign_in a:hover{
+  background: #fff;
+  color: #000;
+}
+
 header h1 {
     font-size: 3.5rem;
     margin-top: 0.5em;
@@ -57,7 +72,7 @@ nav ul {
   color: #ffffff;
 }
 
-nav ul li a {
+nav ul li a  {
   text-decoration: none;
   color: #fff;
   font-weight: lighter;
