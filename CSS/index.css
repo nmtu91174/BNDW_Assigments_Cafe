@@ -165,7 +165,89 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
-    
+.menu-container{
+  background:
+            linear-gradient(#00000079, #00000080), 
+            url('../image/indeximage/cafe1.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.menuColumn{
+  flex: 1;
+  padding: 2rem;
+}
+
+.menuItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menuItem img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+}
+
+.menuItem .menuText{
+  flex: 1;  
+}
+
+.menuText h3 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menuText .price{
+  float: right;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuText p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.menuText .new {
+  padding: 0.2rem 0.5rem;
+  background: #c49b63;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.headerText{
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.headerText h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.headerText p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+}
+
 
 
 
