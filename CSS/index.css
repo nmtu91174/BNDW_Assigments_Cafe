@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  font-size: 16px;
+}
 
 body {
   font-family: "Playfair Display", sans-serif;
@@ -234,7 +237,7 @@ nav ul li a:hover {
 .headerText{
   flex: 1 1 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   color: white;
 }
 
@@ -245,8 +248,59 @@ nav ul li a:hover {
 .headerText p{
   font-size: 1.5rem;
   text-transform: capitalize;
-
 }
+
+.btn{
+  flex: 1 1 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn button{
+ 
+  padding: 0.5em 1em;
+  background: #a9846a;
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn button:hover{
+  background-color: #ffffff;
+  color:#000;
+  scale: 1.1;  
+}
+
+.product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem;
+}
+
+.product-item{
+  padding: 2rem;
+}
+
+.product-item img{
+  margin-bottom: 1rem;
+}
+
+.product-text h3{
+  text-transform: uppercase;
+}
+
+.product-text p{
+  text-align: justify;
+}
+
+
 
 
 
