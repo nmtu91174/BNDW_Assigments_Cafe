@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 16px;
+}
+
+body {
+  font-family: "Playfair Display", sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+  
+}
+
+
+header {
+    width: 100%;
+    min-height: 40vh;
+    text-align: center;
+    background: 
+                linear-gradient(#00000060, #00000050),
+                url('../image/indeximage/cafe2.jpg') no-repeat center/ cover;
+    color: #fff;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.header_top {
+  display: flex;
+  justify-content: space-between; /* trái - phải */
+  align-items: center;
+  
+}
+
+.sign_in {
+  display: inline-block;
+  padding: 0.5% 2%;
+  background: #ffffff;   
+  border-radius: 6px;
+  transition: all 0.3s ease; 
+}
+
+.sign_in a {
+  color: #6F4E37;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Khi hover vào cả khối sign_in */
+.sign_in:hover {
+  background: #6F4E37;
+  
+}
+
+.sign_in:hover a {
+  color: #ffffff; 
+}
+
+
+header h1 {
+    font-size: 3.5rem;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+}
+header p {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/* ================= NAV MENU ================= */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+nav ul li a  {
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  padding: 0.5em 0.8em;
+  border-radius: 0.4em;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.info-description{
+  margin-top: 10px;
+  margin: 1%;
+  flex: 1 1 300px;
+  padding: 1.5em;
+  
+}
+
+.introduction{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introduction h2{
+    font-size: 2rem;
+    color: #552407;
+    margin-top: 1.5rem;
+}
+
+.introduction p{
+    text-align: justify;
+    font-size: 1.3em;    
+}
+
+.h2idescrp{
+    text-transform: uppercase;
+}
+
+.spnidescrp{
+    color: #c7a17a;
+    font-style: italic;
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+.info-description p{
+  text-align: justify;
+  font-size: 1.3em;    
+
+}
+
+.info-description p{
+    text-align: justify;
+    font-size: 1.3em; 
+}
+
+.aidescrp {
+    color: #c7a17a;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    display: inline-block; /* để transform hoạt động */
+}
+
+.aidescrp:hover{
+  transform: scale(1.2);
+}
+
+.menu-container{
+  background:
+            linear-gradient(#00000079, #00000080), 
+            url('../image/indeximage/cafe1.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.menuColumn{
+  flex: 1;
+  padding: 2rem;
+}
+
+.menuItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menuItem img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+}
+
+.menuItem .menuText{
+  flex: 1;  
+}
+
+.menuText h3 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menuText .price{
+  float: right;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuText p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.menuText .new {
+  padding: 0.2rem 0.5rem;
+  background: #c49b63;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.headerText{
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.headerText h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.headerText p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.btn{
+  flex: 1 1 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn button{
+ 
+  padding: 0.5em 1em;
+  background: #a9846a;
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn button:hover{
+  background-color: #ffffff;
+  color:#000;
+  scale: 1.1;  
+}
+
+.product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem;
+}
+
+.product-item{
+  padding: 2rem;
+}
+
+.product-item img{
+  margin-bottom: 1rem;
+}
+
+.product-text h3{
+  text-transform: uppercase;
+}
+
+.product-text p{
+  text-align: justify;
+}
+
+
+
+
+
+
+
