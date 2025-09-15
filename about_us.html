@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/about_us.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Coffee</h3>
+            <p>Freshly brewed coffee made from premium beans.</p>
+            <span class="price">$2.50</span>
+        </div>
+        <div class="menu-item">
+            <h3>Tea</h3>
+            <p>A selection of fine teas from around the world.</p>
+            <span class="price">$2.00</span>
+        </div>
+        <div class="menu-item">
+            <h3>Pastries</h3>
+            <p>Delicious pastries baked fresh daily.</p>
+            <span class="price">$3.00</span>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="left">
+                <div class="content">
+                    <h2>About Us</h2>
+                    <h3><i>Dedication</i> to Quality</h3>
+                    <p>Our mission is to provide sustainably sourced, hand-picked, micro-roasted quality coffee. <br> Great coffee is our passion and we want to share it with you.</p>
+                    <p>We strive to form profound partnerships with farmers from all over the world to create perspective together and form healthy working relationships built on trust and respect.</p>
+                </div>
+            </div>
+
+            <div class="right">
+                <video autoplay muted loop>
+                    <source src="videos/Coffee.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+                <div class="text">
+                Everything we do is a matter of <br> heart, body and soul.
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="philosophy">
+            <h2>Our Philosophy</h2>
+            <h3>Coffee is our <i>craft</i>, our <i>ritual</i>, our <i>passion</i>.</h3>
+            <p>Ethically beans carefully selected from sustainable farms, roasted with precision and brewed with artistry – this is the essence of our philosophy.
+                Every sip is a ritual, carrying with it the warmth of tradition and the spark of innovation. 
+                From the quiet mornings to the lively evenings, coffee becomes a bridge that connects moments, inspires conversations, and nurtures creativity. 
+            </p>
+        </div>
+        
+        <div class="gallery">
+            <div class="leftg">
+                <img src="images/Coffee_1.jpg" alt="Coffee Farm">
+            </div>
+            <div class="rightg">
+                <div class="topg">
+                    <div class="top-left">
+                        <img src="images/Coffee_2.jpg" alt="Roasting Coffee">
+                    </div>
+
+                    <div class="top-right">
+                        <img src="images/Coffee_3.jpg" alt="Coffee Beans">
+                    </div>
+                </div>
+
+                <div class="bottomg">
+                    <img src="images/Coffee_4.jpg" alt="Brewing Coffee">
+                </div>
+            </div>
+        </div>
+        
+        <div class="story">
+            <h2>Our Story</h2>
+            <h3><i>Everything</i> we do is a matter of <i>heart, body and soul</i>.</h3>
+            <p>It all began with a simple belief: that coffee is more than just a drink – it is a bridge between people, cultures, and traditions. Our journey started with a deep curiosity for how a single bean could carry the essence of faraway lands, the dedication of farmers, and the artistry of roasters. Over the years, we have traveled to remote coffee farms, walked among the trees, and spoken with families who have devoted their lives to cultivating coffee with patience and love.</p>
+        </div>
+
+        <div class="mission">
+            <div class="leftm">
+                <img src="images/Coffee_5.jpg" alt="Coffee">
+            </div>
+
+            <div class="rightm">
+                <div class="content">
+                    <h2>Our Mission</h2>
+                    <h3>We source coffee from <i>all over the world</i> from farmers we know and trust</h3>
+                    <p>
+                        We source coffee globally, ensuring sustainability, integrity, and respect for every dedicated farmer.
+                        Our roasting blends passion, tradition, and innovation to create unique flavors in every cup.
+                        From farm to table, each brew tells a story of care, culture, trust, and authentic connection.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
