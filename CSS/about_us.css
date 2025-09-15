@@ -282,7 +282,93 @@ h3{
 }
 
 
+/* ================= HEADER ================= */
+header {
+  width: 100%;
+  text-align: left;
+  background: url('../image/4536.jpg') no-repeat center center / cover;
+  color: #fff;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+/* ================= NAV MENU ================= */
+nav ul {
+  list-style: none;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 1.5rem;
+  margin-left: -2.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  padding: 0.5em 0.8em;
+  border-radius: 0.4em;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
 
 
+/* ================= FOOTER ================= */
+footer {
+  width: 100%;
+  min-height: 30vh;
+  text-align: center;
+  background: url('../image/2148336811.jpg') no-repeat center center / cover;
+  padding: 2em;
+  margin-top: 2em;
+  border-top: 4px solid #5C4033;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 0.8em;
+  transition: color 0.3s;
+}
+
+footer a i {
+  margin-right: 0.3em;
+  color: #a9846a;
+}
+
+/* Hover social colors */
+footer a.facebook:hover { color: #1877F2; }
+footer a.instagram:hover { color: #E4405F; }
+footer a.tiktok:hover { color: #25F4EE; }
 
 
