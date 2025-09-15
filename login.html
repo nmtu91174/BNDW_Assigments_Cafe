@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/login.css"/>
+</head>
+<body>
+  <div class="background">
+    <div class="bg-image bg-login"></div>
+    <div class="bg-image bg-register"></div>
+  </div>
+
+  <div class="container" id="container">
+     <!-- Register -->
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create an Account</h1>
+        <span>or use your email for registration</span>
+        <div class="input-field">
+          <i class="fa-solid fa-mug-hot"></i>
+          <input type="text" placeholder="Name" />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-seedling"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <button>Register</button>
+      </form>
+    </div>
+
+
+    <!-- Login -->
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Login</h1>
+        <span>or use your account</span>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-seedling"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <a href="#">Forgot your password?</a>
+        <button>Login</button>
+      </form>
+    </div>
+
+
+
+    <!-- Hiệu ứng -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back Little One!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Login</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your details and start your journey with us</p>
+          <button class="ghost" id="signUp">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chuyển form -->
+  <script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+    const bgLogin = document.querySelector('.bg-login');
+    const bgRegister = document.querySelector('.bg-register');
+
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+      bgLogin.style.opacity = "0";
+      bgRegister.style.opacity = "1";
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+      bgLogin.style.opacity = "1";
+      bgRegister.style.opacity = "0";
+    });
+  </script>
+</body>
+</html>
